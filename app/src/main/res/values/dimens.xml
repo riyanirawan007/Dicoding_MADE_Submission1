@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_components_10dp">10dp</dimen>
+    <dimen name="padding_components_3dp">3dp</dimen>
+    <dimen name="padding_components_6dp">6dp</dimen>
+    <dimen name="text_size_label">11sp</dimen>
+    <dimen name="text_size_description">13sp</dimen>
+</resources>

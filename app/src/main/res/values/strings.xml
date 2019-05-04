@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">iMovieCatalog</string>
+    <string name="action_settings">Daily Reminder</string>
+
+    <string name="word_movie">Movie</string>
+    <string name="word_movie_date_upcoming_on">will release soon on</string>
+
+    <string name="notification_daily_reminder_title">Daily Reminder</string>
+    <string name="notification_daily_reminder_msg">Let\'s check movies catalog, right now!</string>
+    <string name="notification_upcoming_movie_title">Up Coming Movie</string>
+    <string name="info_daily_reminder_setup">Daily Reminder Created</string>
+    <string name="info_daily_reminder_cancel">Daily Reminder Canceled</string>
+    <string name="search_keywords">Search Keywords</string>
+    <string name="search">Search</string>
+    <string name="search_result_tell_not_found">Sorry, movie data not found!,\nlet\'s  check your connection or\ntry again another search keywords</string>
+    <string name="search_tell_to_fill_keywords">Let\'s search movies, fill your search keywords</string>
+    <string name="dialog_title_upcoming_stat">Upcoming Notifier Status</string>
+    <string name="dialog_msg_confirm_enable_upcoming">Upcoming Movie Notifier currently is disable, do you want to enable it?</string>
+    <string name="dialog_confirm_yes">Yes</string>
+    <string name="info_upcoming_enabled">Upcoming movie notifier is enabled</string>
+    <string name="dialog_confirm_no">No, i don\'t</string>
+    <string name="dialog_msg_confirm_disable_upcoming">Upcoming Movie Notifier currently is enabled, do you want to disable it?</string>
+    <string name="info_upcoming_disabled">Upcoming movie notifier is disabled</string>
+    <string name="lv_content_desc_movie_poster">Movie Poster</string>
+    <string name="search_tell_cant_empty_keywords">Search keywords can\'t be empty!</string>
+    <string name="cancel_reminder">Cancel Reminder</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="loading_movie_detail">Loading movie detail...</string>
+    <string name="loading_detail_failed">Sorry, can\'t load movie detail, check your connection and try again...</string>
+    <string name="label_release_date">Release Date</string>
+    <string name="label_score">Score</string>
+    <string name="label_runtime">Runtime</string>
+    <string name="label_status">Status</string>
+    <string name="label_budget">Budget</string>
+    <string name="label_genres">Genres</string>
+    <string name="label_production_companies">Production Companies</string>
+    <string name="label_production_countries">Production Countries</string>
+    <string name="label_spoken_languages">Spoken Languages</string>
+    <string name="label_overview">Overview</string>
+    <string name="activity_label_daily_reminder">Daily Reminder</string>
+    <string name="undefined_content">Currently Undefined</string>
+    <string name="activity_label_detail_movie">Detail Movie</string>
+</resources>

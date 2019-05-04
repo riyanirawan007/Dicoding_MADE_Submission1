@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_components_6dp"
+    tools:context=".view.ui.MovieDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_detail_load_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/loading_movie_detail"
+            android:visibility="visible" />
+
+        <android.support.v4.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/Iv_detail_poster"
+                    android:layout_width="160dp"
+                    android:layout_height="250dp"
+                    android:contentDescription="@string/movie_poster"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/Iv_detail_poster"
+                    android:layout_toRightOf="@id/Iv_detail_poster"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_components_6dp"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:text="Movie Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:text="@string/label_release_date"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_release_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_6dp"
+                        android:layout_marginStart="@dimen/padding_components_6dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Friday, 13 July 2018" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_score"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_6dp"
+                        android:layout_marginStart="@dimen/padding_components_6dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="8.4/10 (18032 Reviewers)" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_runtime"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_runtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_6dp"
+                        android:layout_marginStart="@dimen/padding_components_6dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="104 Minutes" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_status"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_6dp"
+                        android:layout_marginStart="@dimen/padding_components_6dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Released" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_budget"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_6dp"
+                        android:layout_marginStart="@dimen/padding_components_6dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="34000000000 USD" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Iv_detail_poster"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_genres"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_genres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Horror, Sci-fi, Comedy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_production_companies"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_companies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Company" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_production_countries"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_countries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Countries" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_spoken_languages"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_languages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Language" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_components_3dp"
+                        android:text="@string/label_overview"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_label" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_overview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_components_3dp"
+                        android:layout_marginStart="@dimen/padding_components_3dp"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="Overviews" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
